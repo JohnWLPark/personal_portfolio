@@ -12,48 +12,9 @@ section {
     padding: 100px;
 }
 
-.banner {
-    position: relative;
-    min-height: 100vh;
-    background: url(images/portfolio1.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.banner h2 {
-    font-size: 3em;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.5em;
-}
 
-.banner h2 span {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.banner h3 {
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
-}
-
-.btn {
-    position: relative;
-    background: #2196f3;
-    display: inline-block;
-    color: #fff;
-    margin-top: 20px;
-    padding: 10px 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-}
+/* NAVBAR SECTION */
 
 header {
     position: fixed;
@@ -109,6 +70,57 @@ header.sticky ul li a {
     color: #111;
 }
 
+
+
+/* MAIN BANNER SECTION */
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(images/japan_street.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+
+/* ABOUT ME SECTION */
+
 .heading {
     width: 100%;
     text-align: center;
@@ -143,7 +155,11 @@ img {
     max-width: 100%;
 }
 
-.services {
+
+
+/* SKILLS SECTION */
+
+.skills {
     background: #111;
 }
 
@@ -151,14 +167,14 @@ img {
     color: #fff;
 }
 
-.services .content {
+.skills .content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.services .content .servicesBx {
+.skills .content .skillsBx {
     padding: 40px 20px;
     background: #222;
     color: #fff;
@@ -168,34 +184,42 @@ img {
     transition: 0.5s;
 }
 
-.services .content .servicesBx:hover {
+.skills .content .skillsBx:hover {
     background: #2196f3;
 }
 
-.services .content .servicesBx img {
+.skills .content .skillsBx img {
     max-width: 80px;
     filter: invert(1);
 }
 
-.services .content .servicesBx h2 {
+.skills .content .skillsBx h2 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.work .content {
+
+
+/* PROJECTS SECTION */
+
+.projects .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.work .content .workBx {
+.projects .content .projectsBx {
     width: 50%;
     padding: 20px;
 }
 
-.work .content .workBx img {
+.projects .content .projectsBx img {
     max-width: 100%;
 }
+
+
+
+/* TESTIMONIALS SECTION */
 
 .testimonial {
     background: #f7f7f7;
@@ -234,6 +258,10 @@ img {
     font-size: 14px;
     font-weight: 400;
 }
+
+
+
+/* CONTACT ME SECTION */
 
 .contact {
     background: #111;
@@ -332,6 +360,7 @@ img {
 }
 
 
+
 /* RESPONSIVE */
 
 @media (max-width: 991px) {
@@ -412,13 +441,17 @@ img {
         min-width: 50%;
         margin-bottom: 20px;
     }
-    .services .content .servicesBx {
+    .skills .content .skillsBx {
         margin: 10px;
     }
-    .work .content .workBx {
+
+
+    .projects .content .projectsBx {
         width: 100%;
         padding: 10px;
     }
+
+
     .testimonial .content .testimonialBx {
         max-width: calc(100% - 20px);
         padding: 40px 20px;
@@ -433,6 +466,7 @@ img {
         margin: 20px 0;
     }
 }
+
 
 @media (max-width: 600px) {
     header,
